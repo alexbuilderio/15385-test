@@ -11,7 +11,7 @@ interface PageProps {
 }
 
 export default async function Page(props: PageProps) {
-  const builderModelName = "page";
+  const builderModelName = "15385-test";
 
   const content = await builder
     // Get the page content from Builder with the specified options
@@ -27,6 +27,7 @@ export default async function Page(props: PageProps) {
   return (
     <>
       {/* Render the Builder page */}
+      <h1>This is a NextJS Gen 1 Builder Page</h1>
       <RenderBuilderContent content={content} model={builderModelName} />
     </>
   );
